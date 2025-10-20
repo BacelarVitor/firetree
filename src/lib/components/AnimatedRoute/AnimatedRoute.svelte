@@ -1,0 +1,11 @@
+<script lang="ts">
+	import { page } from "$app/state";
+	import { fly } from "svelte/transition";
+
+</script>
+
+{#key page.url}
+    <div in:fly={{ x: '-100%', duration: 500 }}>
+        <slot/>
+    </div>
+{/key}
