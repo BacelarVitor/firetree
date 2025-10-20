@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import favicon from '$lib/assets/favicon.svg';
+	import AuthCheck from '$lib/components/AuthCheck.svelte';
 
 	let { children } = $props();
 </script>
